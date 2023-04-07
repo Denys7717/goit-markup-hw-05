@@ -30,7 +30,7 @@
             >Web<span class="header-different">Studio</span>
           </a>
           <ul class="header-list list">
-            <li class="header-item">
+            <li class="header-item current">
               <a class="header-link link click-nav" href="./index.html"
                 >Studio</a
               >
@@ -72,7 +72,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button btn-fam" type="button">
+          <button class="hero-button btn-fam" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -441,5 +441,16 @@
         </div>
       </div>
     </footer>
+    <!----------------------------MODAL-WINDOW------------------------------>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
